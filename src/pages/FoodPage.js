@@ -10,6 +10,7 @@ const FoodPage = () => {
 
   return (
     <div className='container'>
+      <div className='title'>KK12 Random Food Picker</div>
       <div className='card-container'>
         <FoodPanel food={food[id]}></FoodPanel>
       </div>

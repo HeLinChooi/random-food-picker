@@ -1,14 +1,27 @@
 [
   {
-    "name": "Chicken Chop"
+    "name": "Chicken Chop",
+    "imageId": "1GUi30u9pIcXaFiUbtK6zEOCD5XuCjFCb",
+    "description": "The signature dish in kk12"
   },
   {
-    "name": "Meehun"
+    "name": "Meehun Ayam",
+    "imageId": "",
+    "description": "You could get it as low as RM4"
   },
   {
-    "name": "Nasi Briyani"
+    "name": "Nasi Briyani",
+    "imageId": "",
+    "description": "You may want to go earlier to get large fried chicken :)"
   },
   {
-    "name": "Nasi Lemak Ayam"
+    "name": "Roti Canai",
+    "imageId": "",
+    "description": "The quite-popular option in kk12"
+  },
+  {
+    "name": "Nasi Lemak Ayam",
+    "imageId": "",
+    "description": "The classic. We have 2 stalls selling it in kk12!"
   }
 ]

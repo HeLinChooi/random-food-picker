@@ -3,7 +3,6 @@ import Card from './components/Card';
 import food from './food.json';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { redirect } from 'react-router-dom';
 
 function App() {
   const [curIdx, setCurIdx] = useState(Math.floor(Math.random() * food.length));
@@ -14,9 +13,7 @@ function App() {
   const ref = useRef("");
   let navigate = useNavigate();
 
-  console.log('hi')
   useEffect(() => {
-    // console.log(2500 / timingLimit[curSpeedSetIdx]);
     console.log('curSpeedSetIdx < timingLimit.length', curSpeedSetIdx < timingLimit.length);
     if (startPicking && curSpeedSetIdx < timingLimit.length) {
       const id = setTimeout(() => {
@@ -57,6 +54,7 @@ function App() {
 
   return (
     <div className='container'>
+      <div className='title'>KK12 Random Food Picker</div>
       <div className='card-container'>
         {
           food.map((oneFood, idx) => {
@@ -65,7 +63,6 @@ function App() {
         }
       </div>
       <div className='button-container'>
-
         <button className='button-1' onClick={resetRandomPicker}>Pick One!</button>
       </div>
       <div className={ref.current}></div>
