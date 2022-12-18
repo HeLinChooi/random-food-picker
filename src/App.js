@@ -3,6 +3,8 @@ import Card from './components/Card';
 import food from './food.json';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import editIcon from './icons/edit.png'
+import plusIcon from './icons/plus.png'
 
 function App() {
   const [curIdx, setCurIdx] = useState(Math.floor(Math.random() * food.length));
@@ -52,6 +54,10 @@ function App() {
     ref.current = "white-screen"
   }
 
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className='container'>
       <div className='title'>KK12 Random Food Picker</div>
@@ -66,6 +72,12 @@ function App() {
         <button className='button-1' onClick={resetRandomPicker}>Pick One!</button>
       </div>
       <div className={ref.current}></div>
+      <button className='fab fab-1' onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSfnLD5KzVx_EBUy_454ZhPyXTwyESpWUpRv8edzrWVY1A8V1A/viewform?usp=sf_link")}>
+        <img className='img-button' src={plusIcon} alt="add food option" />
+      </button>
+      <button className='fab fab-2' onClick={() => openInNewTab("https://docs.google.com/forms/d/e/1FAIpQLSeBiNePsifF4nb5ZPh3uUsbtGQctwc8vvy0fYhQjnBmuDLVSw/viewform?usp=sf_link")}>
+        <img className='img-button' src={editIcon} alt="add feedback" />
+      </button>
     </div>
   );
 }
