@@ -1,3 +1,5 @@
+> **This repository is archived.** A newer version of the food picker lives at [tool.helinchooi.com/food](https://tool.helinchooi.com/food/). You type in your own list of foods before it picks one. The old app below is still live on Vercel.
+
 > **Warning:** Some dependencies were upgraded to new major versions to fix security vulnerabilities. The app might not work as it did before. These changes only patch the vulnerabilities. The app has not been fully tested after them.
 
 # Random Food Picker
